@@ -36,10 +36,10 @@ $Readhost = Read-Host -Prompt ("y | n ")
 
 # Install the AD Services
 Do {
-Write-Host -ForegroundColor yellow "What's the domain name going to be? It should be"
-Write-Host -ForegroundColor yellow "ad.<your ASUrite ID>.lan, for example"
+Write-Host -ForegroundColor yellow "What's the domain name going to be? It should be lamlin"
+Write-Host -ForegroundColor yellow "ad.lamlin.lan, for example"
 Write-Host -ForegroundColor yellow "ad.4sparky.lan"
-$domainname = Read-Host "ad.<your ASUrite ID>.lan" 
+$domainname = Read-Host "ad.lamlin.lan" 
 } until ($domainname.StartsWith("ad."))
 
 Write-Host -ForegroundColor Red "After you supply the SafeModeAdministratorPassword the machine will reboot on its own."
